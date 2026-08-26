@@ -1,780 +1,242 @@
 # Consciência como Loop Autopreditivo com Peso Sináptico
 
-> **Uma hipótese neurocomputacional derivada de observações em conectomas simulados de _Drosophila melanogaster_**
+## Uma hipótese neurocomputacional derivada de observações em conectomas simulados de *Drosophila melanogaster*
 
-<p align="center">
-  <strong>Davi D'Artemis Sousa</strong><br>
-  Pesquisador independente<br>
-  Junho de 2026
-</p>
-
-<p align="center">
-  <img alt="Status: hipótese científica" src="https://img.shields.io/badge/status-hip%C3%B3tese%20cient%C3%ADfica-6f42c1">
-  <img alt="Área: neurociência computacional" src="https://img.shields.io/badge/%C3%A1rea-neuroci%C3%AAncia%20computacional-0366d6">
-  <img alt="Modelo: conectoma" src="https://img.shields.io/badge/modelo-conectoma-2ea44f">
-  <img alt="Linguagem: Português" src="https://img.shields.io/badge/idioma-Portugu%C3%AAs-yellow">
-</p>
-
----
-
-## Aviso científico
-
-Este repositório apresenta uma **hipótese teórica e experimental em desenvolvimento**. Ele não demonstra a existência ou a ausência de consciência em insetos, recém-nascidos, sistemas artificiais ou conectomas simulados.
-
-Os exemplos computacionais incluídos aqui são modelos conceituais simplificados. Eles servem para tornar a hipótese operacional e ajudar na elaboração de testes, não para reproduzir integralmente um cérebro biológico.
+**Davi D'Artemis Sousa**  
+Pesquisador independente  
+Junho de 2026
 
 ---
 
 ## Resumo
 
-Este trabalho propõe que a consciência do eu pode ser compreendida como um **processo recorrente de autopredição**, sustentado por:
+Este artigo apresenta uma hipótese neurocomputacional sobre a consciência como um processo recorrente de autopredição sustentado por memória física, modulação neuroquímica e densidade sináptica suficiente. A proposta parte de observações experimentais em simulações conectômicas de *Drosophila melanogaster*, nas quais a injeção de ruído neural e a manipulação de estados internos geraram atividade e respostas comportamentais organizadas, mas não permitiram inferir, por si mesmas, a presença de consciência plena.
 
-- memória física;
-- pesos sinápticos;
-- redes de engramas;
-- modulação excitatória e inibitória;
-- estados internos;
-- integração sensorial;
-- feedback neural recorrente.
+O argumento central é que vida, reatividade sensório-motora, proto-consciência e consciência autobiográfica do eu devem ser tratadas como categorias distintas. A memória é definida como infraestrutura física de pesos sinápticos e redes de engramas, necessária para a continuidade do eu, mas insuficiente para explicar a consciência isoladamente.
 
-A motivação inicial surgiu de observações em simulações conectômicas de _Drosophila melanogaster_. Nessas simulações, a injeção de ruído neural e a manipulação de estados internos produziram atividade e respostas motoras organizadas. Entretanto, essas respostas, por si mesmas, não permitem inferir consciência autobiográfica.
+Propõe-se que a consciência do eu emerge quando sinais internos e externos são integrados em um circuito fechado de auto-feedback, no qual a saída neural passa a retroalimentar a entrada do próprio sistema e a atualizar continuamente suas predições sobre o ambiente e sobre si mesmo. A hipótese é formulada de modo testável por meio da comparação entre três condições em conectomas simulados: ruído neural simples, ruído modulado por estado interno e loop autopreditivo fechado.
 
-A hipótese central distingue quatro níveis:
+O artigo discute implicações para o estudo de recém-nascidos, conectomas artificiais, comportamento animal e modelos computacionais de consciência, adotando uma posição cautelosa segundo a qual reatividade organizada não constitui evidência suficiente de consciência autobiográfica.
 
-1. **Vida**
-2. **Reatividade neural**
-3. **Proto-consciência**
-4. **Consciência do eu**
-
-A proposta é que a consciência autobiográfica emerge quando um sistema neural começa não apenas a reagir ao mundo, mas também a **reagir às próprias reações**, transformando continuamente sua saída em nova entrada e atualizando um modelo de si mesmo ao longo do tempo.
+**Palavras-chave:** consciência; proto-consciência; conectoma; *Drosophila melanogaster*; memória; engrama; peso sináptico; autopredição; excitação/inibição; mushroom body.
 
 ---
 
-## Palavras-chave
+## 1. Introdução
 
-`consciência` `proto-consciência` `conectoma` `Drosophila melanogaster` `memória` `engrama` `peso sináptico` `autopredição` `excitação/inibição` `mushroom body`
+A consciência permanece um dos problemas centrais da neurociência e da filosofia da mente. Embora a biologia disponha de definições operacionais relativamente robustas para vida, como sistema químico autossustentável capaz de evolução darwiniana, essa definição não resolve a questão da experiência subjetiva nem da continuidade do eu. Um organismo pode estar metabolicamente vivo, reagir ao ambiente e manter atividade neural sem que isso implique, necessariamente, consciência autobiográfica.
 
----
+Este artigo propõe uma distinção conceitual entre quatro níveis de organização: vida, reatividade neural, proto-consciência e consciência do eu. A hipótese defendida é que a consciência plena não se reduz a nenhum componente isolado. Ela não é apenas ruído neural, nem apenas memória, nem apenas resposta motora, nem apenas integração sensorial. Em vez disso, é proposta como um loop autopreditivo fechado, no qual a atividade neural recorrente utiliza pesos sinápticos de memória, modulação excitatória/inibitória e sinais internos do organismo para gerar predições contínuas sobre o próprio sistema.
 
-## Sumário
+A motivação inicial desta hipótese surgiu durante experimentos com conectomas simulados de *Drosophila melanogaster*. Nessas simulações, a introdução de ruído cerebral e de estados internos artificiais produziu respostas motoras e comportamentais aparentemente organizadas. No entanto, a remoção de estímulos externos e a ausência de recorrência fechada levaram a padrões difusos, instáveis ou convulsivos. Isso sugere que atividade neural e comportamento coerente podem ser necessários, mas não suficientes, para consciência.
 
-- [Visão geral](#visão-geral)
-- [Problema de pesquisa](#problema-de-pesquisa)
-- [Hipótese central](#hipótese-central)
-- [Distinções conceituais](#distinções-conceituais)
-- [Arquitetura proposta](#arquitetura-proposta)
-- [Formulação computacional](#formulação-computacional)
-- [Exemplo mínimo em Python](#exemplo-mínimo-em-python)
-- [Condições experimentais](#condições-experimentais)
-- [Métricas sugeridas](#métricas-sugeridas)
-- [Predições testáveis](#predições-testáveis)
-- [Drosophila e mushroom body](#drosophila-e-mushroom-body)
-- [Recém-nascidos e gradação da consciência](#recém-nascidos-e-gradação-da-consciência)
-- [Implicações](#implicações)
-- [Limitações](#limitações)
-- [Critérios de interpretação](#critérios-de-interpretação)
-- [Estrutura sugerida do repositório](#estrutura-sugerida-do-repositório)
-- [Como citar](#como-citar)
-- [Referências](#referências)
-- [Autor](#autor)
+A proposta aproxima-se, em alguns pontos, de teorias contemporâneas, como a Teoria da Informação Integrada e a Teoria do Espaço de Trabalho Global. No entanto, o objetivo deste artigo não é defender uma dessas teorias, mas apresentar uma formulação própria e operacional: a consciência como auto-feedback autopreditivo dependente de peso sináptico.
 
 ---
 
-## Visão geral
+## 2. Definições conceituais
 
-A consciência permanece um problema central da neurociência, da ciência cognitiva, da inteligência artificial e da filosofia da mente. Definir vida não resolve automaticamente o problema da experiência subjetiva. Da mesma forma, observar atividade neural, respostas motoras ou comportamento organizado não prova a existência de um eu autobiográfico.
+### 2.1 Vida
 
-Este projeto adota uma posição gradual e operacional:
+Neste artigo, vida é entendida como um sistema químico autossustentável, capaz de manter organização interna, trocar energia com o ambiente e, em escala evolutiva, participar de processos darwinianos. Essa definição é útil para separar metabolismo de experiência subjetiva. Um sistema vivo pode não ser consciente, assim como um sistema reativo pode não possuir um eu.
 
-```text
-vida
-  ↓
-reatividade neural
-  ↓
-integração sensório-interna
-  ↓
-proto-consciência
-  ↓
-recorrência estável + memória física + autopredição
-  ↓
-consciência do eu
-```
+### 2.2 Reatividade neural
 
-Essa sequência não deve ser interpretada como uma escala universal já comprovada. Ela representa uma estrutura conceitual a ser testada.
+Reatividade neural é a capacidade de converter estímulos externos ou internos em alterações de estado, respostas motoras ou padrões de atividade. Reflexos, respostas a odores, orientação visual, modulação por fome e acionamento motor podem ocorrer como dinâmica de circuito sem exigir consciência autobiográfica.
 
----
+Essa distinção é essencial: comportamento organizado não é, por si só, prova de experiência subjetiva plena.
 
-## Problema de pesquisa
+### 2.3 Proto-consciência
 
-A pergunta principal é:
+Proto-consciência é definida aqui como um estado intermediário de integração sensório-interna, no qual há regulação por estados corporais, modulação de limiar e possível experiência primária, mas sem evidência necessária de um eu autobiográfico estável.
 
-> **Quais propriedades adicionais distinguem um sistema meramente reativo de um sistema que mantém continuidade autopreditiva sobre si mesmo?**
+Essa categoria é útil para discutir recém-nascidos, animais simples e conectomas artificiais sem reduzir toda resposta comportamental a reflexo mecânico, nem elevar toda reatividade ao nível de consciência plena.
 
-Perguntas derivadas:
+### 2.4 Consciência do eu
 
-- Ruído neural é suficiente para sustentar organização temporal?
-- Estados internos simulados produzem apenas modulação de comportamento ou também recorrência autônoma?
-- Um circuito fechado entre percepção, memória, modulação e ação produz padrões diferentes de um circuito aberto?
-- A continuidade do eu depende mais da intensidade de ativação ou da estabilidade recorrente?
-- Pesos sinápticos funcionais melhoram a persistência e a correção de predições internas?
-- A interrupção do feedback reduz a continuidade temporal do sistema?
+Consciência do eu é definida como um loop autopreditivo estável e recorrente, sustentado por memória física e modulação neuroquímica, capaz de manter continuidade temporal e de produzir predições sobre as próprias mudanças internas.
+
+Nessa formulação, o eu não é um objeto armazenado no cérebro. É uma dinâmica recorrente que usa memória como peso histórico para interpretar, prever e atualizar o próprio estado.
 
 ---
 
-## Hipótese central
+## 3. Memória como infraestrutura física
 
-> **A consciência do eu emerge quando um sistema neural com peso sináptico funcional suficiente utiliza memória física, modulação química, sinais internos e recorrência de circuito para prever e atualizar continuamente o próprio estado.**
+A memória é frequentemente descrita de modo abstrato, como conteúdo mental ou informação armazenada. Para a hipótese aqui proposta, entretanto, a memória deve ser entendida primariamente como fenômeno físico: alterações de conectividade, força sináptica, padrões de reativação e redes de engramas.
 
-Nessa formulação:
+Isso permite distinguir memória de consciência. Um traço de memória pode persistir como estrutura física mesmo quando o sistema não está consciente, desde que o loop funcional que atualiza e utiliza esse traço esteja interrompido.
 
-- a memória fornece o histórico;
-- os pesos sinápticos preservam alterações produzidas pela experiência;
-- a excitação e a inibição regulam estabilidade e ganho;
-- os estados internos definem relevância biológica;
-- os sensores fornecem informação externa e corporal;
-- a saída altera o ambiente ou o próprio sistema;
-- o feedback transforma essa consequência em uma nova entrada;
-- o erro de predição atualiza o modelo e os pesos.
+A memória é, portanto, necessária para a consciência autobiográfica, mas insuficiente para produzi-la isoladamente. Ela fornece peso, continuidade e histórico ao sistema. O loop consciente, por sua vez, é a dinâmica ativa que utiliza esses pesos para gerar autopredição. Sem memória, a consciência do eu perderia continuidade; sem loop recorrente, a memória permaneceria como estrutura inerte ou potencial.
 
-O eu não é tratado como um objeto armazenado em uma região isolada. Ele é tratado como uma **continuidade dinâmica**, reproduzida e atualizada a cada ciclo.
+### 3.1 Memória curta e memória autobiográfica
+
+A hipótese distingue dois usos funcionais da memória. Em sistemas imaturos ou simples, a memória pode operar como retenção curta, ajuste de limiar e repetição de padrões recentes. Em sistemas mais densos e recorrentes, a memória passa a sustentar continuidade autobiográfica, identidade e predição de longo alcance.
+
+Essa distinção permite interpretar formas iniciais de experiência sem assumir que toda experiência já contenha um eu narrativo completo.
 
 ---
 
-## Distinções conceituais
+## 4. Excitação, inibição e estados internos
 
-### 1. Vida
+A atividade consciente não depende apenas de conectividade anatômica. Ela exige também regulação dinâmica por neurotransmissores e neuromoduladores. Glutamato, GABA, dopamina, serotonina, acetilcolina, octopamina e outros sinais químicos regulam excitabilidade, limiar de disparo, ganho sensorial, motivação, atenção e seleção de respostas.
 
-Sistema químico autossustentável capaz de manter organização interna, trocar energia com o ambiente e participar, em escala populacional, de processos evolutivos.
+Desse modo, estados internos como fome, sede, sono, dor ou estresse podem alterar profundamente o comportamento sem que seja necessário invocar consciência plena.
 
-A vida é uma condição biológica. Ela não é equivalente, por definição, à experiência subjetiva.
+Em conectomas simulados, um estado interno artificial pode aumentar a sensibilidade a certos estímulos e facilitar respostas motoras. Em organismos biológicos, processos análogos ocorrem quando a necessidade energética aumenta a saliência de odores ou sinais associados a alimento.
 
-### 2. Reatividade neural
-
-Capacidade de converter estímulos internos ou externos em mudanças de estado, atividade neural ou resposta motora.
-
-Exemplos:
-
-- reflexos;
-- orientação por estímulo visual;
-- resposta a odores;
-- alteração de comportamento por fome;
-- ativação motora por circuitos sensoriais.
-
-Reatividade organizada não é evidência suficiente de consciência autobiográfica.
-
-### 3. Proto-consciência
-
-Estado intermediário de integração sensorial e corporal no qual pode existir regulação interna, seleção de estímulos e possível experiência primária, mas sem evidência necessária de um eu autobiográfico estável.
-
-O termo funciona como categoria de investigação, não como diagnóstico definitivo de experiência subjetiva.
-
-### 4. Consciência do eu
-
-Loop recorrente e estável capaz de:
-
-- integrar sinais externos e internos;
-- utilizar memória física;
-- produzir previsões sobre o próprio estado;
-- comparar previsão e estado atualizado;
-- corrigir o modelo interno;
-- preservar continuidade temporal.
-
-### Comparação resumida
-
-| Nível | Integração sensorial | Estado interno | Memória | Feedback recorrente | Eu autobiográfico |
-|---|---:|---:|---:|---:|---:|
-| Vida | não obrigatório | básico | não obrigatório | não obrigatório | não inferido |
-| Reatividade | presente | possível | opcional | limitado | não inferido |
-| Proto-consciência | integrada | relevante | curta ou funcional | parcial | não demonstrado |
-| Consciência do eu | integrada | contextual | persistente | fechado e estável | hipótese positiva |
+A hipótese interpreta esses fenômenos como modulação de circuito: estados internos não criam consciência por si mesmos, mas podem fornecer parte das condições necessárias para um loop autopreditivo biologicamente relevante.
 
 ---
 
-## Arquitetura proposta
+## 5. Observações em conectomas simulados de *Drosophila melanogaster*
 
-```mermaid
-flowchart LR
-    E[Ambiente] --> S[Sinais sensoriais]
-    B[Estado corporal] --> I[Estado interno]
-    S --> X[Integração neural]
-    I --> X
-    M[Memória física e pesos sinápticos] --> X
-    F[Feedback recorrente] --> X
-    X --> P[Predição do próximo estado]
-    P --> A[Resposta cognitiva ou motora]
-    A --> E
-    A --> F
-    S --> C[Comparação]
-    P --> C
-    C --> R[Erro de predição]
-    R --> M
-    R --> F
-```
+A *Drosophila melanogaster* oferece um modelo útil para investigar a diferença entre reatividade organizada e processos recorrentes mais complexos. Seu conectoma permite analisar a propagação de sinais entre áreas sensoriais, regiões associadas à memória, circuitos moduladores e vias motoras.
 
-### Componentes mínimos
+O mushroom body, em particular, é relevante por sua associação com aprendizado, memória, integração sensorial e modulação por estados internos.
 
-1. **Entrada externa**: sinais visuais, químicos, mecânicos, térmicos ou auditivos.
-2. **Entrada interna**: fome, sede, sono, dor, estresse e estado energético.
-3. **Memória física**: pesos sinápticos, conectividade e engramas.
-4. **Modelo preditivo**: transformação do estado atual em uma previsão.
-5. **Saída**: alteração motora, cognitiva ou regulatória.
-6. **Comparador**: cálculo da diferença entre previsão e observação.
-7. **Plasticidade**: atualização dos pesos em função do erro.
-8. **Recorrência**: reinserção da saída e de seus efeitos no sistema.
+Nas observações que motivaram esta hipótese, a injeção de ruído neural no conectoma gerou atividade e respostas motoras. Quando havia estímulos externos, o sistema podia produzir comportamento aparentemente coerente. Porém, quando os estímulos externos eram removidos, a atividade tendia a se tornar desorganizada, aleatória ou convulsiva.
+
+Esse resultado sugere que ruído neural pode ativar circuitos, mas não estabelece, por si só, um loop autopreditivo.
+
+A introdução de estados internos artificiais, como um sinal análogo à fome, aumentou a responsividade do sistema e facilitou comportamentos compatíveis com busca ou reação. Ainda assim, tais respostas podem ser explicadas por mudanças de limiar e ganho de circuito. Portanto, o conectoma pode simular comportamento funcional sem que se conclua automaticamente a presença de consciência.
 
 ---
 
-## Formulação computacional
+## 6. Recém-nascidos e a gradação da consciência
 
-Considere o estado integrado do sistema no instante `t`:
+A hipótese deve ser aplicada a recém-nascidos com cautela. Não se afirma aqui que recém-nascidos sejam inconscientes. A literatura contemporânea sugere que formas iniciais de experiência podem estar presentes no início da vida, embora sua estrutura seja distinta da consciência adulta.
 
-```math
-x_t = f(s_t, i_t, r_{t-1}, W_t)
-```
+O ponto defendido é mais específico: reatividade sensorial, reflexos motores e regulação por estados internos não demonstram, isoladamente, consciência autobiográfica do eu.
 
-Onde:
+Recém-nascidos podem apresentar proto-consciência ou consciência perceptiva inicial, sustentada por circuitos sensoriais, estados corporais e redes funcionais em desenvolvimento. Entretanto, a consciência do eu, como definida neste artigo, exigiria maior densidade funcional, estabilidade de memória e recorrência autopreditiva.
 
-- `s_t` representa sinais externos;
-- `i_t` representa o estado interno;
-- `r_(t-1)` representa feedback recorrente;
-- `W_t` representa os pesos sinápticos e a memória física;
-- `f` representa a dinâmica de integração.
+Nesse sentido, o desenvolvimento da consciência seria gradual: de reatividade e proto-consciência para formas progressivamente mais estáveis de autopredição.
 
-A predição do próximo estado pode ser representada por:
+---
 
-```math
-p_{t+1} = g(x_t, W_t)
-```
+## 7. Hipótese central
 
-O erro de predição:
+A hipótese pode ser formulada da seguinte maneira:
 
-```math
-ε_t = o_{t+1} - p_{t+1}
-```
+> **A consciência do eu emerge quando um sistema neural com peso sináptico suficiente passa a usar memória física, modulação química e recorrência de circuito para prever e atualizar continuamente seu próprio estado.**
 
-A atualização dos pesos:
+O sistema consciente não apenas reage ao mundo. Ele reage às próprias reações, transformando sua saída em nova entrada.
 
-```math
-W_{t+1} = W_t + η · h(ε_t, x_t, a_t)
-```
+A consciência, nessa formulação, não está localizada em uma única área, nem em uma substância específica, nem em uma memória isolada. Ela é uma organização dinâmica. A memória fornece o peso histórico; a excitação e a inibição regulam a estabilidade; os estados internos definem relevância; os sensores fornecem entrada; e o loop fechado produz continuidade autopreditiva.
 
-Onde:
-
-- `o_(t+1)` é o estado observado após a ação;
-- `a_t` é a saída produzida;
-- `η` é a taxa de aprendizagem;
-- `h` é a regra de plasticidade.
-
-A recorrência é expressa como:
-
-```math
-r_t = q(a_t, o_{t+1}, ε_t)
-```
-
-### Pseudocódigo conceitual
+### 7.1 Formulação esquemática
 
 ```python
 estado_interno = ruido_basal + modulacao_neuroquimica
 memoria_fisica = pesos_sinapticos + redes_de_engrama
-feedback_recorrente = estado_inicial
 
 while sistema_integrado:
-    entrada = (
-        sinais_externos
-        + sinais_internos
-        + feedback_recorrente
-    )
+    entrada = sinais_externos + sinais_internos + feedback_recorrente
 
     predicao = modelo_do_sistema(
-        entrada=entrada,
-        memoria=memoria_fisica,
-        estado_interno=estado_interno,
+        entrada,
+        memoria_fisica,
+        estado_interno
     )
 
-    saida = gerar_resposta(predicao)
-    entrada_atualizada = observar_consequencias(saida)
+    saida = resposta_cognitiva_ou_motora(predicao)
     erro = comparar(predicao, entrada_atualizada)
 
     memoria_fisica = atualizar_pesos(
-        memoria=memoria_fisica,
-        erro=erro,
-        saida=saida,
+        memoria_fisica,
+        erro,
+        saida
     )
 
-    feedback_recorrente = transformar_em_feedback(
-        saida=saida,
-        observacao=entrada_atualizada,
-        erro=erro,
-    )
+    feedback_recorrente = transformar_saida_em_nova_entrada(saida)
 ```
+
+Essa representação é conceitual. Ela descreve as relações funcionais propostas, não uma implementação suficiente de consciência.
 
 ---
 
-## Exemplo mínimo em Python
+## 8. Predições testáveis
 
-O exemplo abaixo não simula consciência. Ele ilustra a diferença entre entrada externa, estado interno, memória ponderada e feedback recorrente.
+A hipótese gera predições que podem ser investigadas experimentalmente ou em simulações conectômicas:
 
-```python
-from dataclasses import dataclass
-import numpy as np
-
-
-@dataclass
-class EstadoInterno:
-    fome: float = 0.0
-    excitacao: float = 0.5
-    inibicao: float = 0.5
-
-
-class LoopAutopreditivo:
-    def __init__(self, dimensao: int, taxa_aprendizado: float = 0.01):
-        self.dimensao = dimensao
-        self.eta = taxa_aprendizado
-        self.pesos = np.eye(dimensao) * 0.1
-        self.feedback = np.zeros(dimensao)
-        self.estado = np.zeros(dimensao)
-
-    def integrar(
-        self,
-        sinais_externos: np.ndarray,
-        sinais_internos: np.ndarray,
-    ) -> np.ndarray:
-        entrada = sinais_externos + sinais_internos + self.feedback
-        self.estado = np.tanh(self.pesos @ entrada)
-        return self.estado
-
-    def prever(self) -> np.ndarray:
-        return np.tanh(self.pesos @ self.estado)
-
-    def agir(self, predicao: np.ndarray) -> np.ndarray:
-        return np.tanh(predicao)
-
-    def atualizar(
-        self,
-        predicao: np.ndarray,
-        observacao: np.ndarray,
-    ) -> float:
-        erro = observacao - predicao
-        self.pesos += self.eta * np.outer(erro, self.estado)
-        self.feedback = 0.8 * self.feedback + 0.2 * observacao
-        return float(np.mean(erro ** 2))
-
-
-def executar_ciclo(
-    modelo: LoopAutopreditivo,
-    sinal_externo: np.ndarray,
-    sinal_interno: np.ndarray,
-) -> dict:
-    estado = modelo.integrar(sinal_externo, sinal_interno)
-    predicao = modelo.prever()
-    acao = modelo.agir(predicao)
-
-    # Modelo simplificado da consequência da ação.
-    observacao = 0.7 * sinal_externo + 0.3 * acao
-    erro_quadratico = modelo.atualizar(predicao, observacao)
-
-    return {
-        "estado": estado,
-        "predicao": predicao,
-        "acao": acao,
-        "observacao": observacao,
-        "erro_quadratico": erro_quadratico,
-    }
-
-
-if __name__ == "__main__":
-    rng = np.random.default_rng(seed=42)
-    modelo = LoopAutopreditivo(dimensao=8)
-
-    for ciclo in range(100):
-        externo = rng.normal(0.0, 0.05, size=8)
-        interno = np.zeros(8)
-        interno[0] = 0.6  # Sinal interno abstrato, como fome.
-
-        resultado = executar_ciclo(modelo, externo, interno)
-
-        if ciclo % 10 == 0:
-            erro = resultado["erro_quadratico"]
-            print(f"ciclo={ciclo:03d} erro={erro:.6f}")
-```
-
-### Dependência do exemplo
-
-```bash
-python -m pip install numpy
-```
-
-### Execução
-
-```bash
-python exemplo_loop.py
-```
-
-### Interpretação correta
-
-Uma redução do erro ou o aparecimento de recorrência estável nesse modelo indicaria apenas que o sistema aprendeu regularidades internas. Não seria, isoladamente, evidência de experiência subjetiva.
+1. Ruído neural simples deve aumentar atividade, mas não produzir estabilidade temporal compatível com autopredição.
+2. Estados internos simulados devem alterar ganho, limiar e seleção de respostas, podendo gerar comportamento coerente sem consciência plena.
+3. Loops fechados entre regiões sensoriais, áreas associativas ou de memória e vias motoras devem produzir padrões mais estáveis e recorrentes do que ruído difuso.
+4. A interrupção do feedback recorrente deve reduzir continuidade comportamental e transformar respostas organizadas em reatividade fragmentada.
+5. Aumentos graduais de peso sináptico funcional devem melhorar a capacidade do sistema de manter predições internas ao longo do tempo.
+6. A consciência autobiográfica deve correlacionar-se mais fortemente com estabilidade recorrente e atualização de memória do que com mera intensidade de ativação neural.
 
 ---
 
-## Condições experimentais
+## 9. Protocolo experimental proposto
 
-### Condição A: ruído neural simples
+Para tornar a hipótese operacional, propõe-se comparar três condições em conectomas simulados.
 
-Aplicar ruído basal de baixa frequência sem estímulos externos relevantes e sem feedback fechado.
+### 9.1 Condição A: ruído neural simples
 
-```python
-entrada = ruido_basal
-feedback = np.zeros_like(entrada)
-plasticidade = False
-```
+Aplicar ruído basal em baixa frequência sem estímulos externos relevantes. Medir propagação, estabilidade, recorrência, entropia de atividade e ocorrência de padrões motores.
 
-**Medir:**
+A predição é que o sistema apresente atividade sem organização autopreditiva sustentada.
 
-- propagação;
-- entropia;
-- persistência;
-- distribuição de disparos;
-- padrões motores;
-- autocorrelação temporal.
+### 9.2 Condição B: ruído com estado interno
 
-**Predição:** aumento de atividade sem organização autopreditiva sustentada.
+Adicionar um modulador interno artificial, como fome, sede ou alteração excitatória/inibitória. Medir se o estado interno altera a sensibilidade a estímulos específicos e facilita respostas coerentes.
 
-### Condição B: ruído com estado interno
+A predição é que haverá comportamento mais direcionado, mas ainda dependente de limiares e circuitos reativos.
 
-Adicionar um modulador interno artificial, como fome ou alteração do equilíbrio excitatório/inibitório.
+### 9.3 Condição C: loop autopreditivo fechado
 
-```python
-entrada = ruido_basal + ganho_fome * sinal_associado_a_alimento
-feedback = np.zeros_like(entrada)
-plasticidade = False
-```
+Fechar um circuito recorrente entre regiões sensoriais, mushroom body ou área análoga de memória, circuitos moduladores e saída motora. A saída deve retroalimentar a entrada.
 
-**Medir:**
+Medir estabilidade temporal, recorrência, autocorrelação, resposta a perturbações, capacidade de manter estado interno e divergência em relação às condições A e B.
 
-- ganho de resposta;
-- alteração de limiar;
-- seleção de estímulos;
-- coerência motora;
-- dependência do modulador.
+### 9.4 Métricas sugeridas
 
-**Predição:** comportamento mais direcionado, ainda explicável por modulação reativa.
-
-### Condição C: loop autopreditivo fechado
-
-Fechar um circuito entre regiões sensoriais, área associativa ou de memória, circuitos moduladores e saída motora.
-
-```python
-entrada = sinais_externos + sinais_internos + feedback_anterior
-predicao = modelo(entrada, pesos)
-saida = politica(predicao)
-erro = observacao - predicao
-pesos = atualizar(pesos, erro)
-feedback_anterior = transformar(saida, observacao, erro)
-```
-
-**Medir:**
-
-- estabilidade temporal;
-- recorrência;
-- autocorrelação;
-- robustez a perturbações;
-- persistência sem estímulo externo;
-- atualização de pesos;
-- recuperação após interrupção do feedback.
-
-**Predição:** padrões mais estáveis e autocorrelacionados do que nas condições A e B, desde que a recorrência permaneça regulada.
+- Estabilidade temporal dos padrões de ativação.
+- Recorrência entre entrada e saída.
+- Autocorrelação de estados internos.
+- Sensibilidade a perturbações.
+- Diferença entre comportamento gerado por estímulo externo e comportamento gerado por feedback interno.
+- Persistência de estados sem estímulo externo.
+- Grau de atualização dos pesos sinápticos após ciclos recorrentes.
 
 ---
 
-## Métricas sugeridas
+## 10. Discussão
 
-### 1. Autocorrelação temporal
+A hipótese proposta busca evitar dois reducionismos. O primeiro é reduzir consciência à memória. O segundo é reduzir consciência à reatividade.
 
-Avalia quanto o estado atual preserva estrutura de estados anteriores.
+A memória, embora essencial para a continuidade do eu, não é suficiente para explicar a presença de experiência consciente. Da mesma forma, comportamento organizado pode emergir de circuitos sensório-motores modulados por estados internos sem que isso implique consciência autobiográfica.
 
-```python
-import numpy as np
+O experimento mental do Barco de Teseu ajuda a esclarecer esse ponto. Se duas cópias idênticas de um sistema neural fossem criadas com as mesmas memórias, elas não constituiriam a mesma consciência em continuidade, mas dois loops dinâmicos distintos iniciados a partir de estados semelhantes.
 
+Isso sugere que a identidade consciente não está apenas no conteúdo da memória, mas na continuidade física e funcional do processo recorrente.
 
-def autocorrelacao(serie: np.ndarray, atraso: int = 1) -> float:
-    x = serie[:-atraso]
-    y = serie[atraso:]
-    if x.size == 0 or np.std(x) == 0 or np.std(y) == 0:
-        return 0.0
-    return float(np.corrcoef(x, y)[0, 1])
-```
+A hipótese também oferece uma interpretação para o desenvolvimento infantil. O recém-nascido não deve ser descrito como mero autômato, pois há integração sensorial e estados internos complexos. Porém, também não é necessário atribuir a ele uma consciência autobiográfica adulta.
 
-### 2. Erro médio de predição
-
-```python
-def erro_medio_quadratico(predito, observado):
-    predito = np.asarray(predito)
-    observado = np.asarray(observado)
-    return float(np.mean((observado - predito) ** 2))
-```
-
-### 3. Persistência sem estímulo
-
-Número de passos em que um padrão permanece detectável depois da remoção da entrada externa.
-
-```python
-def persistencia(estados, limiar=0.1):
-    energia = np.linalg.norm(estados, axis=1)
-    return int(np.sum(energia > limiar))
-```
-
-### 4. Sensibilidade a perturbações
-
-Comparar a trajetória de uma execução de controle com outra que recebeu uma perturbação pequena.
-
-```math
-D(t) = ||x_t^(controle) - x_t^(perturbado)||₂
-```
-
-### 5. Índice de recorrência operacional
-
-Uma métrica experimental simples pode combinar:
-
-```math
-R = αA + βP + γC - δE
-```
-
-Onde:
-
-- `A` é autocorrelação;
-- `P` é persistência;
-- `C` é capacidade de recuperação;
-- `E` é erro de predição;
-- `α`, `β`, `γ` e `δ` são coeficientes definidos antes do experimento.
-
-Esse índice não deve ser chamado de “medida de consciência”. Ele representa somente uma medida operacional de recorrência e estabilidade.
+A consciência pode ser gradual, começando com proto-consciência e tornando-se consciência do eu conforme aumentam a densidade funcional, a estabilidade de memória e a recorrência autopreditiva.
 
 ---
 
-## Predições testáveis
+## 11. Limitações
 
-A hipótese produz as seguintes previsões:
+A presente proposta é uma hipótese teórica e experimental inicial. Ela não demonstra a existência ou ausência de consciência em *Drosophila*, recém-nascidos ou sistemas artificiais. Também não resolve diretamente o problema fenomenológico da experiência subjetiva.
 
-1. Ruído neural simples aumentará atividade, mas não necessariamente estabilidade temporal.
-2. Estados internos simulados alterarão ganho, limiar e seleção de respostas.
-3. Comportamento coerente poderá surgir sem um loop autopreditivo completo.
-4. Loops fechados produzirão maior recorrência do que ruído difuso, quando adequadamente regulados.
-5. A interrupção do feedback reduzirá a continuidade temporal e a capacidade de autocorreção.
-6. O aumento gradual de peso sináptico funcional melhorará a retenção de regularidades.
-7. Recorrência excessiva e mal regulada poderá produzir instabilidade, saturação ou dinâmica convulsiva.
-8. A estabilidade dependerá do equilíbrio entre excitação, inibição, plasticidade e dissipação.
-9. Sistemas com memória semelhante, mas históricos físicos separados, formarão trajetórias recorrentes distintas.
-10. A continuidade autobiográfica, se associada ao modelo, deverá correlacionar-se mais com recorrência integrada do que com intensidade bruta de ativação.
+Sua contribuição é mais restrita: oferecer um modelo operacional para distinguir reatividade, proto-consciência e consciência do eu com base em memória física, modulação química e recorrência autopreditiva.
+
+Outra limitação é que conectomas anatômicos não capturam completamente a dinâmica real de neurotransmissores, plasticidade, metabolismo, glia, oscilação neural e corpo. Portanto, qualquer simulação conectômica deve ser interpretada como modelo parcial, não como reprodução completa de um organismo vivo.
 
 ---
 
-## Drosophila e mushroom body
+## 12. Conclusão
 
-A _Drosophila melanogaster_ é um modelo útil porque seu conectoma permite investigar trajetórias entre:
+A consciência, segundo a hipótese apresentada, não é uma substância nem um elemento isolado. Ela é uma dinâmica recorrente: um loop autopreditivo que utiliza memória física, modulação química, estados internos e feedback neural para manter continuidade temporal e produzir predições sobre si mesmo.
 
-- sistemas sensoriais;
-- circuitos associativos;
-- vias de memória;
-- neurônios moduladores;
-- circuitos motores.
+Um cérebro ou conectoma pode reagir ao mundo sem possuir consciência autobiográfica; pode apresentar proto-consciência sem possuir um eu estável; e pode conter memórias físicas sem que essas memórias estejam operando em um processo consciente.
 
-O **mushroom body** é especialmente relevante devido à sua associação com aprendizagem, memória, integração sensorial e modulação por contexto fisiológico.
+A conclusão central é que peso sináptico suficiente é condição necessária para a consciência do eu, mas não suficiente sozinho. A consciência exige que esse peso seja incorporado a um loop ativo, integrado e autorreferente.
 
-Entretanto, um conectoma anatômico não contém sozinho toda a dinâmica do organismo. Uma simulação biologicamente mais informativa deveria incorporar, na medida do possível:
-
-- sinais e polaridade sináptica;
-- atrasos de propagação;
-- plasticidade;
-- neuromodulação;
-- metabolismo;
-- interação corpo-ambiente;
-- células gliais;
-- ruído estruturado;
-- mecanismos homeostáticos.
-
----
-
-## Recém-nascidos e gradação da consciência
-
-A aplicação da hipótese a recém-nascidos exige cautela. O modelo não afirma que recém-nascidos sejam inconscientes.
-
-A distinção proposta é mais limitada:
-
-- respostas sensoriais não demonstram sozinhas um eu autobiográfico;
-- reflexos não esgotam a possibilidade de experiência inicial;
-- integração corporal e perceptiva pode sustentar formas iniciais de experiência;
-- memória, densidade funcional e recorrência desenvolvem-se gradualmente;
-- consciência perceptiva e consciência autobiográfica não precisam surgir simultaneamente.
-
-O desenvolvimento pode ser investigado como uma transição gradual entre integração inicial, memória funcional, recorrência estável e autopredição de maior alcance temporal.
-
----
-
-## Implicações
-
-### Para a neurociência computacional
-
-A hipótese sugere que experimentos devem comparar explicitamente circuitos abertos e fechados, em vez de medir apenas intensidade de atividade.
-
-### Para conectomas artificiais
-
-Um conectoma estrutural pode gerar propagação sem reproduzir plasticidade, corpo, química ou história individual. A recorrência deve ser avaliada como propriedade dinâmica, não presumida a partir da anatomia.
-
-### Para inteligência artificial
-
-Sistemas que mantêm memória, predição e feedback podem apresentar propriedades de autorregulação. Essas propriedades não autorizam, por si mesmas, atribuição de experiência subjetiva.
-
-### Para identidade e continuidade
-
-Duas cópias inicialmente idênticas, contendo as mesmas memórias, passam a constituir processos distintos quando seus loops físicos seguem trajetórias separadas. A identidade estaria relacionada não apenas ao conteúdo, mas à continuidade do processo recorrente.
-
-### Para metodologia científica
-
-O projeto favorece métricas observáveis e hipóteses refutáveis, sem supor que uma única métrica resolva o problema fenomenológico da consciência.
-
----
-
-## Limitações
-
-1. A hipótese não resolve o problema da experiência subjetiva.
-2. Correlação entre recorrência e comportamento não demonstra fenomenologia.
-3. Conectomas anatômicos não reproduzem integralmente a dinâmica biológica.
-4. O modelo ainda não estabelece um limiar objetivo de “peso sináptico suficiente”.
-5. Proto-consciência é uma categoria operacional, não uma entidade diretamente mensurável.
-6. Métricas de estabilidade também podem aparecer em sistemas não conscientes.
-7. A recorrência isolada pode gerar ciclos triviais, saturação ou instabilidade.
-8. O papel do corpo e do ambiente precisa ser explicitamente modelado.
-9. Comparações entre insetos, humanos e sistemas artificiais exigem critérios diferentes.
-10. Resultados negativos em uma implementação não refutam toda a classe de modelos sem controle de arquitetura e parâmetros.
-
----
-
-## Critérios de interpretação
-
-### O que contaria como suporte parcial
-
-- maior estabilidade na condição de loop fechado;
-- redução consistente do erro de predição;
-- persistência regulada depois da remoção do estímulo;
-- recuperação após perturbações moderadas;
-- dependência demonstrável da memória física;
-- degradação seletiva após interrupção do feedback.
-
-### O que não deve ser interpretado como prova de consciência
-
-- movimento organizado;
-- resposta a estímulos;
-- redução do erro em uma rede;
-- presença de memória;
-- alta conectividade;
-- recorrência simples;
-- complexidade visual de padrões;
-- antropomorfização do comportamento.
-
-### Possíveis resultados que enfraqueceriam a hipótese
-
-- ausência de diferenças robustas entre as três condições;
-- recorrência estável sem qualquer dependência dos pesos;
-- desempenho igual ou superior em modelos puramente reativos;
-- interrupção do feedback sem efeito mensurável;
-- métricas escolhidas incapazes de separar ciclos triviais de autopredição funcional.
-
----
-
-## Estrutura sugerida do repositório
-
-```text
-.
-├── README.md
-├── LICENSE
-├── CITATION.cff
-├── artigo/
-│   └── artigo_original.docx
-├── docs/
-│   ├── protocolo_experimental.md
-│   ├── definicoes.md
-│   └── limitacoes.md
-├── src/
-│   ├── modelo.py
-│   ├── metricas.py
-│   └── experimentos.py
-├── tests/
-│   ├── test_modelo.py
-│   └── test_metricas.py
-├── notebooks/
-│   └── exploracao.ipynb
-├── data/
-│   └── README.md
-├── results/
-│   └── README.md
-└── requirements.txt
-```
-
-### Exemplo de `requirements.txt`
-
-```text
-numpy
-scipy
-pandas
-matplotlib
-networkx
-```
-
-> Fixe versões antes de publicar resultados reprodutíveis.
-
-### Boas práticas recomendadas
-
-- conservar parâmetros e sementes aleatórias;
-- separar dados brutos de dados processados;
-- registrar a versão do conectoma;
-- documentar critérios de inclusão e exclusão;
-- publicar resultados negativos;
-- evitar alterar métricas depois de observar resultados;
-- incluir testes de controle e ablação;
-- distinguir observações, interpretações e especulações.
-
----
-
-## Roteiro de desenvolvimento
-
-- [x] Formular a hipótese central.
-- [x] Distinguir vida, reatividade, proto-consciência e consciência do eu.
-- [x] Propor três condições experimentais.
-- [x] Definir métricas iniciais.
-- [ ] Formalizar o modelo matemático completo.
-- [ ] Implementar condição A.
-- [ ] Implementar condição B.
-- [ ] Implementar condição C.
-- [ ] Criar testes de ablação do feedback.
-- [ ] Avaliar diferentes regras de plasticidade.
-- [ ] Medir estabilidade em múltiplas sementes.
-- [ ] Definir critérios estatísticos antes da análise.
-- [ ] Publicar código, parâmetros e resultados.
-- [ ] Submeter o manuscrito à revisão por pares.
-
----
-
-## Como citar
-
-### Citação sugerida
-
-```text
-Sousa, D. D'A. (2026). Consciência como Loop Autopreditivo com Peso
-Sináptico: uma hipótese neurocomputacional derivada de observações em
-conectomas simulados de Drosophila melanogaster. Repositório GitHub.
-```
-
-### BibTeX
-
-```bibtex
-@misc{sousa2026loopautopreditivo,
-  author       = {Davi D'Artemis Sousa},
-  title        = {Consciência como Loop Autopreditivo com Peso Sináptico},
-  year         = {2026},
-  howpublished = {Repositório GitHub},
-  note         = {Hipótese neurocomputacional em desenvolvimento}
-}
-```
+Assim, o caminho experimental mais promissor é comparar reatividade simples, modulação por estados internos e loops fechados de auto-feedback em conectomas simulados, buscando métricas objetivas de recorrência, estabilidade e autopredição.
 
 ---
 
@@ -790,59 +252,13 @@ conectomas simulados de Drosophila melanogaster. Repositório GitHub.
 8. Lagercrantz, H. (2025). The awakening of the newborn human infant and the emergence of consciousness. *Acta Paediatrica, 114*(5), 823-828.
 9. Rao-Ruiz, P., Visser, E., Mitrić, M., Smit, A. B., & van den Oever, M. C. (2021). A synaptic framework for the persistence of memory engrams. *Frontiers in Synaptic Neuroscience, 13*, 661476. https://doi.org/10.3389/fnsyn.2021.661476
 10. Zaki, Y., & Cai, D. J. (2024). Memory engram stability and flexibility. *Neuropsychopharmacology, 50*, 285-293. https://doi.org/10.1038/s41386-024-01979-z
-11. Li, F., Lindsey, J. W., Marin, E. C., Otto, N., Dreher, M., Dempsey, G., et al. (2020/2021). The connectome of the adult Drosophila mushroom body provides insights into function. *eLife, 9*, e62576. https://doi.org/10.7554/eLife.62576
+11. Li, F., Lindsey, J. W., Marin, E. C., Otto, N., Dreher, M., Dempsey, G., et al. (2020/2021). The connectome of the adult *Drosophila* mushroom body provides insights into function. *eLife, 9*, e62576. https://doi.org/10.7554/eLife.62576
 12. Suárez-Grimalt, R., Grunwald Kadow, I. C., & Scheunemann, L. (2024). An integrative sensor of body states: How the mushroom body modulates behavior depending on physiological context. *Learning & Memory, 31*(5), a053918. https://doi.org/10.1101/lm.053918.124
 13. Pal, M. M. (2021). Glutamate: The master neurotransmitter and its implications in chronic stress and mood disorders. *Frontiers in Human Neuroscience, 15*, 722323. https://doi.org/10.3389/fnhum.2021.722323
 14. Tsuboi, D., Nagai, T., Yoshimoto, J., & Kaibuchi, K. (2024). Neuromodulator regulation and emotions: Insights from the crosstalk of cell signaling. *Frontiers in Molecular Neuroscience, 17*, 1376762. https://doi.org/10.3389/fnmol.2024.1376762
 
 ---
 
-## Uso responsável
+## Licença
 
-Ao discutir possíveis formas de consciência em animais, recém-nascidos ou sistemas artificiais:
-
-- evite conclusões categóricas baseadas somente em comportamento;
-- diferencie simulação funcional de evidência fenomenológica;
-- declare as limitações dos dados;
-- preserve o caráter testável da hipótese;
-- não utilize o modelo como base isolada para decisões clínicas, éticas ou jurídicas.
-
----
-
-## Contribuições
-
-Contribuições científicas e técnicas são bem-vindas, especialmente nas áreas de:
-
-- modelagem de redes recorrentes;
-- análise de conectomas;
-- métricas de estabilidade temporal;
-- plasticidade sináptica;
-- desenho experimental;
-- reprodução de resultados;
-- filosofia da mente;
-- revisão bibliográfica.
-
-Ao propor alterações, diferencie claramente:
-
-1. correções factuais;
-2. extensões matemáticas;
-3. resultados experimentais;
-4. interpretações filosóficas;
-5. especulações.
-
----
-
-## Autor
-
-**Davi D'Artemis Sousa**  
-Pesquisador independente
-
----
-
-## Nota final
-
-A tese deste projeto pode ser condensada em uma frase:
-
-> **Memória fornece continuidade histórica, modulação fornece relevância, recorrência fornece continuidade dinâmica e autopredição transforma a reação do sistema em um modelo continuamente atualizado de si mesmo.**
-
-A presença dessas propriedades ainda não resolve, sozinha, o problema da experiência subjetiva. A contribuição pretendida é oferecer uma estrutura operacional para testar diferenças entre atividade, reatividade, integração, memória e autopredição recorrente.
+Este artigo está disponibilizado sob a licença **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Consulte o arquivo [`LICENSE.md`](LICENSE.md) para conhecer os termos aplicáveis.
