@@ -15,23 +15,18 @@ preliminares em simulações do conectoma de *Drosophila melanogaster*.
 
 ## Em uma página
 
-**Pergunta.** Em simulações do conectoma da mosca, ruído e estados internos artificiais (como "fome") produzem
-saídas motoras organizadas. O que faltaria para essa atividade ser mais do que reatividade?
+Numa simulação do conectoma da mosca, ruído e um sinal artificial de fome produzem saídas motoras que parecem
+organizadas, e nada nisso exige consciência. O ensaio propõe que o que falta é um loop em que o sistema use sua
+memória física (pesos sinápticos) e seus estados internos para **prever o próprio estado**.
 
-**Hipótese.** A consciência do eu exige três ingredientes juntos, nenhum suficiente sozinho:
+Duas objeções são enfrentadas. A primeira, de que a ideia já existe, é em boa parte aceita: a hipótese é próxima do
+processamento preditivo aplicado ao eu (Seth), do processamento recorrente (Lamme) e das teorias do eu como modelo
+(Metzinger) ou laço (Hofstadter). A segunda, de que qualquer sistema com retroalimentação fica mais estável, leva à
+principal proposta do texto: um controle em que a retroalimentação tem a mesma estatística, mas deixa de ser
+consequência das ações do próprio sistema. Comparar as duas situações separa autorreferência de mera recorrência.
 
-1. memória física acumulada (peso sináptico);
-2. modulação por estados internos (excitação/inibição, neuromoduladores);
-3. um loop fechado em que a saída do sistema volta como entrada e é usada para **prever o próprio estado**.
-
-**Relação com teorias existentes.** A hipótese é próxima do processamento preditivo aplicado ao eu (Seth), do
-processamento recorrente (Lamme), do modelo de si (Metzinger) e do "laço estranho" (Hofstadter). O artigo diz em que
-coincide e em que difere (Seção 2).
-
-**Protocolo proposto.** Quatro condições num conectoma simulado: (A) ruído, (B) ruído com estado interno, (C) loop
-fechado e (D) loop com retroalimentação embaralhada no tempo. O contraste C × D separa autorreferência de mera
-recorrência. A medida principal é a *informação autopreditiva*: quanto o estado interno ajuda a prever o próprio
-futuro do sistema, além do que as entradas externas explicam.
+O ensaio termina com o que continua em aberto: o teste mede autopredição, não experiência, e os simuladores de
+conectoma atuais não têm plasticidade, sem a qual o papel da memória não pode ser testado.
 
 ## Status e limites
 
