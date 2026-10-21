@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Se usar este trabalho, cite-o com os metadados abaixo."
+title: "Consciência como Loop Autopreditivo com Peso Sináptico: uma hipótese neurocomputacional motivada por simulações do conectoma de Drosophila melanogaster"
+type: generic
+version: "2"
+date-released: "2026-10-21"
+authors:
+  - family-names: "Sousa"
+    given-names: "Davi D'Artemis"
+    email: "contato@arvoconcept.com.br"
+license: CC-BY-4.0
+repository-code: "https://github.com/daviDarthemis/consciencia-loop-autopreditivo"
+keywords:
+  - consciência
+  - autopredição
+  - processamento preditivo
+  - conectoma
+  - Drosophila melanogaster
