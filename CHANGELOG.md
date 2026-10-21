@@ -2,6 +2,11 @@
 
 ## Versão 2 — outubro de 2026
 
+**Estrutura**
+- O texto foi reescrito como argumento corrido, em vez de lista de tópicos: problema (Seção 1), proposta (2),
+  objeção de que a ideia já existe (3), objeção de que qualquer loop produz estabilidade e a resposta com o controle
+  de retroalimentação embaralhada (4), o que a resposta não resolve (5) e conclusão (6).
+
 **Enquadramento**
 - O texto passa a se apresentar como *ensaio de hipótese*. A seção sobre as simulações virou "Observações
   preliminares", com aviso explícito de que não são resultado experimental.
